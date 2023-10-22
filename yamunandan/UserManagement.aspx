@@ -20,31 +20,31 @@
         </div>
        
     <div class="col-lg-4">
-        <asp:ImageButton ID="employees" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/admin.jpg"  Width="169px" OnClick="employees_Click"  />
+        <asp:ImageButton ID="admin" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/admin.jpg"  Width="169px" OnClick="admin_Click"   />
         <h2>Create New Admin</h2>
         <p>
             <a class="btn btn-default " href="admin.aspx" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="displayadmin" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/admin.jpg"  Width="169px" OnClick="medicines_Click" />
+        <asp:ImageButton ID="displayadmin" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/admin.jpg"  Width="169px" OnClick="displayadmin_Click"  />
         <h2>Display and Update Admin</h2>
         <p>
             <a class="btn btn-default " href="#" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="grossary" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/employee image.jpg"  Width="169px" />
+        <asp:ImageButton ID="employee" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/employee image.jpg"  Width="169px" OnClick="employee_Click"  />
         <h2>Create New Employee</h2>
         <p>
-            <a class="btn btn-default " href="http://localhost:54509/GroceryManagement.aspx" role="button">View More »</a></p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="sellproduct" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/employee image.jpg" Width="169px" />
+        <asp:ImageButton ID="displayemployee" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/employee image.jpg" Width="169px" OnClick="displayemployee_Click" />
         <h2>Display Employee</h2>
         <p>
             <a class="btn btn-default " href="DisplayEmployee.aspx" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="cart" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/salary.jpg"  Width="169px" />
+        <asp:ImageButton ID="salary" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/salary.jpg"  Width="169px" OnClick="salary_Click" />
         <h2>Do Employee Payment</h2>
         <p>
             <a class="btn btn-default " href="#" role="button">View More »</a></p>

@@ -10,16 +10,16 @@
             <a class="btn btn-default " href="UserManagement.aspx" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="medicines" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/medicine.jpg"  Width="169px" />
+        <asp:ImageButton ID="medicines" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/medicine.jpg"  Width="169px" OnClick="medicines_Click" />
         <h2>Medicines</h2>
         <p>
-            <a class="btn btn-default " href="http://localhost:54509/pharmacymanagement.aspx" role="button">View More »</a></p>
+            <a class="btn btn-default " href="pharmacymanagement.aspx" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="grossary" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/Grocery.jpg"  Width="169px" />
+        <asp:ImageButton ID="grossary" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/Grocery.jpg"  Width="169px" OnClick="grossary_Click" />
         <h2>Grocery</h2>
         <p>
-            <a class="btn btn-default " href="http://localhost:54509/GroceryManagement.aspx" role="button">View More »</a></p>
+            <a class="btn btn-default " href="GroceryManagement.aspx" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
         <asp:ImageButton ID="sellproduct" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/sellproduct.jpg"  Width="169px" />

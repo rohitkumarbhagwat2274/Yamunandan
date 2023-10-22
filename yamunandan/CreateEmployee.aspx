@@ -110,7 +110,6 @@
             <div class="col-xs-11">
                 <asp:Button ID="back" runat="server" CssClass="btn-success" Text="back" OnClick="back_Click" />
                 <asp:Button ID="btnsave" runat="server" cssClass="btn-success"  Text="SAVE" OnClick="btnsave_Click" />
-                <asp:Button ID="update" runat="server" CssClass="btn-success"  Text="Update" />
             </div>
     </div>
 

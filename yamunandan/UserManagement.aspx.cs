@@ -19,14 +19,30 @@ namespace yamunandan
             Response.Redirect("admindashboard.aspx");
         }
 
-        protected void employees_Click(object sender, ImageClickEventArgs e)
+
+        protected void admin_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("admin.aspx");
         }
 
-        protected void medicines_Click(object sender, ImageClickEventArgs e)
+        protected void displayadmin_Click(object sender, ImageClickEventArgs e)
         {
+            Response.Redirect("displayadmin.aspx");
+        }
 
+        protected void employee_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("CreateEmployee.aspx");
+        }
+
+        protected void displayemployee_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("DisplayEmployee.aspx");
+        }
+
+        protected void salary_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("employeepay.aspx");
         }
     }
 }

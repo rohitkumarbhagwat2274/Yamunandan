@@ -24,13 +24,13 @@ namespace yamunandan
         protected global::System.Web.UI.WebControls.Button back;
 
         /// <summary>
-        /// employees control.
+        /// admin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton employees;
+        protected global::System.Web.UI.WebControls.ImageButton admin;
 
         /// <summary>
         /// displayadmin control.
@@ -42,30 +42,30 @@ namespace yamunandan
         protected global::System.Web.UI.WebControls.ImageButton displayadmin;
 
         /// <summary>
-        /// grossary control.
+        /// employee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton grossary;
+        protected global::System.Web.UI.WebControls.ImageButton employee;
 
         /// <summary>
-        /// sellproduct control.
+        /// displayemployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton sellproduct;
+        protected global::System.Web.UI.WebControls.ImageButton displayemployee;
 
         /// <summary>
-        /// cart control.
+        /// salary control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton cart;
+        protected global::System.Web.UI.WebControls.ImageButton salary;
     }
 }

@@ -50,6 +50,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -103,6 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Addgrocery.aspx" />
+    <Content Include="AddMedicine.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="admindashboard.aspx" />
     <Content Include="adminlogin.aspx" />
@@ -129,11 +132,22 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CreateEmployee.aspx" />
+    <Content Include="Customerselldashboard.aspx" />
+    <Content Include="CustomerSellerAddress.aspx" />
+    <Content Include="customersellerlogin.aspx" />
+    <Content Include="customersellersignup.aspx" />
+    <Content Include="CustomerStartingPage.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="displayadmin.aspx" />
     <Content Include="DisplayEmployee.aspx" />
+    <Content Include="displayemployeepayment.aspx" />
+    <Content Include="displaygrocery.aspx" />
     <Content Include="employeeAddress.aspx" />
+    <Content Include="employeepay.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="GroceryManagement.aspx" />
+    <Content Include="help.aspx" />
     <Content Include="images\admin.jpg" />
     <Content Include="images\appliance.jpg" />
     <Content Include="images\ayurvedic.jpg" />
@@ -159,6 +173,32 @@
     <Content Include="images\salary.jpg" />
     <Content Include="images\search.png" />
     <Content Include="images\sellproduct.jpg" />
+    <Content Include="pharmacymanagement.aspx" />
+    <Content Include="ProductImage\parkin_plus_tablet.jpg" />
+    <Content Include="product\c1.jpg" />
+    <Content Include="product\c2.jpg" />
+    <Content Include="product\c3.jpg" />
+    <Content Include="product\i1.jpg" />
+    <Content Include="product\i2.jpg" />
+    <Content Include="product\i3.jpg" />
+    <Content Include="product\i4.jpg" />
+    <Content Include="product\i5.jpg" />
+    <Content Include="product\imgabc.gif" />
+    <Content Include="product\n1.jpg" />
+    <Content Include="product\n2.jpg" />
+    <Content Include="product\n3.jpg" />
+    <Content Include="product\n4.jpg" />
+    <Content Include="product\n5.jpg" />
+    <Content Include="product\parkin_plus_tablet.jpg" />
+    <Content Include="product\potato.jpg" />
+    <Content Include="product\Refrigrater1.jpg" />
+    <Content Include="product\s1.jpg" />
+    <Content Include="product\s2.jpg" />
+    <Content Include="product\s3.jpg" />
+    <Content Include="product\s4.jpg" />
+    <Content Include="product\s5.jpg" />
+    <Content Include="product\shree1.jpg" />
+    <Content Include="salaryManagement.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -187,6 +227,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="CustomerStarting.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -214,8 +255,12 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="sellerhomepage.aspx" />
+    <Content Include="sellerPickupAddress.aspx" />
     <Content Include="Site.Master" />
     <Content Include="updateEmployee.aspx" />
+    <Content Include="updatemedicine.aspx" />
+    <Content Include="updatepickupaddress.aspx" />
     <Content Include="UserManagement.aspx" />
     <Content Include="userpic\20220714_171325 %281%29.jpg" />
     <Content Include="userpic\20220714_171325 %282%29.jpg" />
@@ -238,6 +283,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addgrocery.aspx.cs">
+      <DependentUpon>Addgrocery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addgrocery.aspx.designer.cs">
+      <DependentUpon>Addgrocery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMedicine.aspx.cs">
+      <DependentUpon>AddMedicine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMedicine.aspx.designer.cs">
+      <DependentUpon>AddMedicine.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,12 +341,61 @@
     <Compile Include="CreateEmployee.aspx.designer.cs">
       <DependentUpon>CreateEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Customerselldashboard.aspx.cs">
+      <DependentUpon>Customerselldashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customerselldashboard.aspx.designer.cs">
+      <DependentUpon>Customerselldashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSellerAddress.aspx.cs">
+      <DependentUpon>CustomerSellerAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSellerAddress.aspx.designer.cs">
+      <DependentUpon>CustomerSellerAddress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customersellerlogin.aspx.cs">
+      <DependentUpon>customersellerlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customersellerlogin.aspx.designer.cs">
+      <DependentUpon>customersellerlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customersellersignup.aspx.cs">
+      <DependentUpon>customersellersignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customersellersignup.aspx.designer.cs">
+      <DependentUpon>customersellersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerStarting.Master.cs">
+      <DependentUpon>CustomerStarting.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerStarting.Master.designer.cs">
+      <DependentUpon>CustomerStarting.Master</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerStartingPage.aspx.cs">
+      <DependentUpon>CustomerStartingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerStartingPage.aspx.designer.cs">
+      <DependentUpon>CustomerStartingPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="displayadmin.aspx.cs">
+      <DependentUpon>displayadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="displayadmin.aspx.designer.cs">
+      <DependentUpon>displayadmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="DisplayEmployee.aspx.cs">
       <DependentUpon>DisplayEmployee.aspx</DependentUpon>
@@ -296,6 +404,20 @@
     <Compile Include="DisplayEmployee.aspx.designer.cs">
       <DependentUpon>DisplayEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="displayemployeepayment.aspx.cs">
+      <DependentUpon>displayemployeepayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="displayemployeepayment.aspx.designer.cs">
+      <DependentUpon>displayemployeepayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="displaygrocery.aspx.cs">
+      <DependentUpon>displaygrocery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="displaygrocery.aspx.designer.cs">
+      <DependentUpon>displaygrocery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="employeeAddress.aspx.cs">
       <DependentUpon>employeeAddress.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -303,10 +425,59 @@
     <Compile Include="employeeAddress.aspx.designer.cs">
       <DependentUpon>employeeAddress.aspx</DependentUpon>
     </Compile>
+    <Compile Include="employeepay.aspx.cs">
+      <DependentUpon>employeepay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employeepay.aspx.designer.cs">
+      <DependentUpon>employeepay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GroceryManagement.aspx.cs">
+      <DependentUpon>GroceryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroceryManagement.aspx.designer.cs">
+      <DependentUpon>GroceryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pharmacymanagement.aspx.cs">
+      <DependentUpon>pharmacymanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pharmacymanagement.aspx.designer.cs">
+      <DependentUpon>pharmacymanagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="salaryManagement.aspx.cs">
+      <DependentUpon>salaryManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="salaryManagement.aspx.designer.cs">
+      <DependentUpon>salaryManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerhomepage.aspx.cs">
+      <DependentUpon>sellerhomepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerhomepage.aspx.designer.cs">
+      <DependentUpon>sellerhomepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerPickupAddress.aspx.cs">
+      <DependentUpon>sellerPickupAddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerPickupAddress.aspx.designer.cs">
+      <DependentUpon>sellerPickupAddress.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -327,6 +498,20 @@
     </Compile>
     <Compile Include="updateEmployee.aspx.designer.cs">
       <DependentUpon>updateEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatemedicine.aspx.cs">
+      <DependentUpon>updatemedicine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatemedicine.aspx.designer.cs">
+      <DependentUpon>updatemedicine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatepickupaddress.aspx.cs">
+      <DependentUpon>updatepickupaddress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatepickupaddress.aspx.designer.cs">
+      <DependentUpon>updatepickupaddress.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserManagement.aspx.cs">
       <DependentUpon>UserManagement.aspx</DependentUpon>
