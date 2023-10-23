@@ -41,5 +41,10 @@ namespace yamunandan
         {
             Response.Redirect("GroceryManagement.aspx");
         }
+
+        protected void sellproduct_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("CustomerProductManagement.aspx");
+        }
     }
 }

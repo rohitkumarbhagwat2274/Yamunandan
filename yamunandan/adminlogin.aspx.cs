@@ -1,10 +1,7 @@
-﻿using Microsoft.Ajax.Utilities;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Net.NetworkInformation;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -47,7 +44,7 @@ namespace yamunandan
                         //cookie["pwd"] = TextBox2.Text;
                         Response.Cookies.Add(cookie); //Response.SetCookie(cookie);
                         cookie.Expires = DateTime.Now.AddMinutes(5);
-                        Response.Redirect("admindashboard.aspx?username=" + userid.Text);
+                        Response.Redirect("Default.aspx?username=" + userid.Text);
 
 
                     }
@@ -241,3 +238,4 @@ namespace yamunandan
         }
     }
 }
+    

@@ -104,8 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AboutCustomerSellermedicine.aspx" />
+    <Content Include="AboutCustSellerElectronicProduct.aspx" />
     <Content Include="Addgrocery.aspx" />
     <Content Include="AddMedicine.aspx" />
+    <Content Include="Addsellproducts.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="admindashboard.aspx" />
     <Content Include="adminlogin.aspx" />
@@ -132,6 +135,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CreateEmployee.aspx" />
+    <Content Include="CustomerProductManagement.aspx" />
     <Content Include="Customerselldashboard.aspx" />
     <Content Include="CustomerSellerAddress.aspx" />
     <Content Include="customersellerlogin.aspx" />
@@ -227,7 +231,6 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="CustomerStarting.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -283,6 +286,20 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutCustomerSellermedicine.aspx.cs">
+      <DependentUpon>AboutCustomerSellermedicine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutCustomerSellermedicine.aspx.designer.cs">
+      <DependentUpon>AboutCustomerSellermedicine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutCustSellerElectronicProduct.aspx.cs">
+      <DependentUpon>AboutCustSellerElectronicProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutCustSellerElectronicProduct.aspx.designer.cs">
+      <DependentUpon>AboutCustSellerElectronicProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Addgrocery.aspx.cs">
       <DependentUpon>Addgrocery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,6 +313,13 @@
     </Compile>
     <Compile Include="AddMedicine.aspx.designer.cs">
       <DependentUpon>AddMedicine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Addsellproducts.aspx.cs">
+      <DependentUpon>Addsellproducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addsellproducts.aspx.designer.cs">
+      <DependentUpon>Addsellproducts.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
@@ -341,6 +365,13 @@
     <Compile Include="CreateEmployee.aspx.designer.cs">
       <DependentUpon>CreateEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CustomerProductManagement.aspx.cs">
+      <DependentUpon>CustomerProductManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerProductManagement.aspx.designer.cs">
+      <DependentUpon>CustomerProductManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Customerselldashboard.aspx.cs">
       <DependentUpon>Customerselldashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -368,13 +399,6 @@
     </Compile>
     <Compile Include="customersellersignup.aspx.designer.cs">
       <DependentUpon>customersellersignup.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="CustomerStarting.Master.cs">
-      <DependentUpon>CustomerStarting.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CustomerStarting.Master.designer.cs">
-      <DependentUpon>CustomerStarting.Master</DependentUpon>
     </Compile>
     <Compile Include="CustomerStartingPage.aspx.cs">
       <DependentUpon>CustomerStartingPage.aspx</DependentUpon>
@@ -530,6 +554,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="adminpage\" />
+    <Folder Include="sellerproductimg\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

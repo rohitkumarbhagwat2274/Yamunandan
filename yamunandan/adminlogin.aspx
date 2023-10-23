@@ -1,6 +1,105 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="yamunandan.adminlogin" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="adminlogin.aspx.cs" Inherits="yamunandan.adminlogin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Login</title>
+         <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link href="css/custom.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="css/custom.css" rel="stylesheet" />
+    
+     <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 100%;
+            border: 1px solid #008080;
+        }
+        .auto-style4 {
+            float: left;
+            height: 27px;
+        }
+        .auto-style5 {
+             width: 265px;
+             height: 23px;
+         }
+        .auto-style6 {
+            height: 23px;
+        }
+        .auto-style7 {
+            height: 27px;
+            width: 316px;
+        }
+         .auto-style8 {
+             height: 27px;
+             width: 265px;
+         }
+        
+    .auto-style7 {
+        height: 27px;
+        width: 316px;
+        border-radius: 5px;
+    }
+    .auto-style8 {
+        height: 27px;
+        width: 265px;
+        border-radius: 5px;
+    }
+    .auto-style7:hover,
+.auto-style8:hover {
+    background-color: #FFA07A; /* Change the color to your desired hover color */
+}
+
+</style>
+
+    
+</head>
+
+<body>
+    <form id="form1" runat="server">
+           <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="starting.aspx"><span><img src="images/logo.jpg" height="30" /></span> Yamunandan pvt</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="starting.aspx">Sign in</a></li>
+                        <li><a href="CustomerStartingPage.aspx">Customer Shoping</a></li>
+                        <li><a href="help.aspx">Help Line</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Men</li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Formal Dresses</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Women</li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Shrees</a></li>
+                                <li><a href="#">Kurti</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
         <div class="center-page" >
                                                        
@@ -36,6 +135,7 @@
             <asp:HyperLink ID="forgotpass" runat="server">Forgot Password</asp:HyperLink>
                     
             <br />
-
-</p>
-</asp:Content>
+       </div>
+    </form>
+</body>
+</html>

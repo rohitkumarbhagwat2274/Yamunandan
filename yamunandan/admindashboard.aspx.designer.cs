@@ -87,15 +87,6 @@ namespace yamunandan
         protected global::System.Web.UI.WebControls.ImageButton customer;
 
         /// <summary>
-        /// milk control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton milk;
-
-        /// <summary>
         /// feedback control.
         /// </summary>
         /// <remarks>
@@ -112,15 +103,6 @@ namespace yamunandan
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton retunrproduct;
-
-        /// <summary>
-        /// addmin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton addmin;
 
         /// <summary>
         /// discount control.

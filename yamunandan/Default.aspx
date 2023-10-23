@@ -2,42 +2,83 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <main>
-        <section class="row" aria-labelledby="aspnetTitle">
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-        </section>
+     <p>
+        
+        <h3>Welcome:<asp:Label ID="Label2" runat="server" Text='<%# Session["username"] %>'></asp:Label></h3>
 
-        <div class="row">
-            <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
-                <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="librariesTitle">
-                <h2 id="librariesTitle">Get more libraries</h2>
-                <p>
-                    NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-                </p>
-            </section>
-            <section class="col-md-4" aria-labelledby="hostingTitle">
-                <h2 id="hostingTitle">Web Hosting</h2>
-                <p>
-                    You can easily find a web hosting company that offers the right mix of features and price for your applications.
-                </p>
-                <p>
-                    <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-                </p>
-            </section>
-        </div>
-    </main>
+    
+ 
+
+    <div class="col-lg-4">
+        <asp:ImageButton ID="employees" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/employee image.jpg"  Width="169px" OnClick="employees_Click" />
+        <h2>Employees</h2>
+        <p>
+            <a class="btn btn-default " href="UserManagement.aspx" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="medicines" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/medicine.jpg"  Width="169px" OnClick="medicines_Click" />
+        <h2>Medicines</h2>
+        <p>
+            <a class="btn btn-default " href="pharmacymanagement.aspx" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="grossary" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/Grocery.jpg"  Width="169px" OnClick="grossary_Click" />
+        <h2>Grocery</h2>
+        <p>
+            <a class="btn btn-default " href="GroceryManagement.aspx" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="sellproduct" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/sellproduct.jpg"  Width="169px" OnClick="sellproduct_Click" />
+        <h2>Customers Sell Product</h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="cart" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/cart.png"  Width="169px" />
+        <h2>Cart Product</h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="delivery" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/deleverory.png"  Width="169px" />
+        <h2>About Delivery</h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="customer" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/customer.jpg"  Width="169px" />
+        <h2>About Customers</h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    
+    <div class="col-lg-4">
+        <asp:ImageButton ID="feedback" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/feedback.jpg"  Width="169px" />
+        <h2>Feedback</h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="retunrproduct" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/exchange product.png"  Width="169px" />
+        <h2>About Returned Product </h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    
+    <div class="col-lg-4">
+        <asp:ImageButton ID="discount" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/discount.jpg"  Width="169px" />
+        <h2>Discounts</h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    <div class="col-lg-4">
+        <asp:ImageButton ID="coupan" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/coupan.jpg"  Width="169px" />
+        <h2>Create Coupan <del>100</del></h2>
+        <p>
+            <a class="btn btn-default " href="#" role="button">View More »</a></p>
+    </div>
+    <br />
+</p>
+
 
 </asp:Content>

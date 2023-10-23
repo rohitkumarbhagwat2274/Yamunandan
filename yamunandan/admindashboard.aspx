@@ -22,7 +22,7 @@
             <a class="btn btn-default " href="GroceryManagement.aspx" role="button">View More »</a></p>
     </div>
     <div class="col-lg-4">
-        <asp:ImageButton ID="sellproduct" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/sellproduct.jpg"  Width="169px" />
+        <asp:ImageButton ID="sellproduct" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/sellproduct.jpg"  Width="169px" OnClick="sellproduct_Click" />
         <h2>Customers Sell Product</h2>
         <p>
             <a class="btn btn-default " href="#" role="button">View More »</a></p>
@@ -45,12 +45,7 @@
         <p>
             <a class="btn btn-default " href="#" role="button">View More »</a></p>
     </div>
-    <div class="col-lg-4">
-        <asp:ImageButton ID="milk" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/milk.jpg"  Width="169px" />
-        <h2>About Milk Seller</h2>
-        <p>
-            <a class="btn btn-default " href="#" role="button">View More »</a></p>
-    </div>
+    
     <div class="col-lg-4">
         <asp:ImageButton ID="feedback" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/feedback.jpg"  Width="169px" />
         <h2>Feedback</h2>
@@ -63,12 +58,7 @@
         <p>
             <a class="btn btn-default " href="#" role="button">View More »</a></p>
     </div>
-    <div class="col-lg-4">
-        <asp:ImageButton ID="addmin" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/admin.jpg"  Width="169px" />
-        <h2>About Admin</h2>
-        <p>
-            <a class="btn btn-default " href="#" role="button">View More »</a></p>
-    </div>
+   
     <div class="col-lg-4">
         <asp:ImageButton ID="discount" runat="server" class="img-circle" Height="140px" ImageUrl="~/images/discount.jpg"  Width="169px" />
         <h2>Discounts</h2>

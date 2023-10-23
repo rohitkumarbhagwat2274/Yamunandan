@@ -23,13 +23,7 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <style type="text/css">
-        .auto-style1 {
-            height: 39px;
-        }
-    </style>
-
-</head>
+    </head>
 <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
@@ -64,9 +58,10 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/CustomerStarting.master">Use Customer</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/adminlogin.aspx">Sign in</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/help.aspx">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/CustomerStartingPage.aspx">Customer Page</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/CreateEmployee.aspx">Add Employee</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/pharmacymanagement.aspx">pharmacymanagement</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/adminlogin.aspx">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,9 +69,11 @@
         <div class="container body-content ">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr class="auto-style1" />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <div class="container">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>&copy; Yamunandan.pvt &middot; <a href="admindashboard.aspx">Home</a> &middot; <a href="#">About</a> &middot; <a href="#">Contact</a> &middot; <a href="#">Products</a></p>
+            </div>
             </footer>
         </div>
     </form>
